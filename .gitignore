@@ -1,0 +1,14 @@
+/target/
+/node_modules/
+/dist/
+/web/wasm/
+.wrangler/
+.dev.vars
+.DS_Store
+/test-results/
+/playwright-report/
+.env
+.env.*
+!.env.example
+.dev.vars.*
+/validation/e2e-*.raw.json

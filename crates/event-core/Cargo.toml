@@ -1,0 +1,13 @@
+[package]
+name = "event-core"
+version = "0.1.0"
+edition = "2021"
+publish = false
+repository = "https://github.com/kandotrun/traceglass"
+description = "Compact deterministic event generation and filtering for Traceglass."
+
+[lib]
+name = "event_core"
+
+[dependencies]
+serde_json = "1"

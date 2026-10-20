@@ -1,0 +1,5 @@
+{"timestamp":"2026-10-20T09:00:00Z","level":"info","service":"research-agent","message":"調査を開始しました","duration_ms":12,"trace_id":1}
+{"timestamp":"2026-10-20T09:00:01Z","level":"info","service":"web-search","message":"Retrieved 12 sources","duration_ms":245,"trace_id":1}
+{"timestamp":"2026-10-20T09:00:02Z","level":"warn","service":"web-search","message":"Source request exceeded time budget","duration_ms":3200,"trace_id":1}
+{"timestamp":"2026-10-20T09:00:03Z","level":"error","service":"research-agent","message":"根拠の取得に失敗しました","duration_ms":5100,"trace_id":1,"error":{"code":"SOURCE_TIMEOUT","retryable":true}}
+{"timestamp":"2026-10-20T09:00:05Z","level":"info","service":"research-agent","message":"Retry completed successfully","duration_ms":180,"trace_id":2}

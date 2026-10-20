@@ -1,0 +1,164 @@
+{
+  "tested_at": "2026-10-20T10:55:22.068Z",
+  "url": "https://traceglass.2-38.com/",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "wasm_memory_bytes": 54853632,
+  "startup_ms": 619.3000000715256,
+  "dataset": "1,000,000 deterministic compact simulated events",
+  "metric": "Rust filtering + aggregation only; excludes input delivery, rendering and first-load costs",
+  "samples_count": 30,
+  "median_ms": 4.199999928474426,
+  "p95_ms": 7.300000071525574,
+  "samples": [
+    {
+      "query": "",
+      "query_ms": 7.399999976158142,
+      "matched": 1000000
+    },
+    {
+      "query": "timeout",
+      "query_ms": 2.3000000715255737,
+      "matched": 7327
+    },
+    {
+      "query": "retry",
+      "query_ms": 2.5,
+      "matched": 25151
+    },
+    {
+      "query": "gateway",
+      "query_ms": 5.5,
+      "matched": 232346
+    },
+    {
+      "query": "error",
+      "query_ms": 2.899999976158142,
+      "matched": 43240
+    },
+    {
+      "query": "evidence",
+      "query_ms": 4.299999952316284,
+      "matched": 146651
+    },
+    {
+      "query": "",
+      "query_ms": 7.299999952316284,
+      "matched": 1000000
+    },
+    {
+      "query": "timeout",
+      "query_ms": 2.299999952316284,
+      "matched": 7327
+    },
+    {
+      "query": "retry",
+      "query_ms": 2.600000023841858,
+      "matched": 25151
+    },
+    {
+      "query": "gateway",
+      "query_ms": 5.400000095367432,
+      "matched": 232346
+    },
+    {
+      "query": "error",
+      "query_ms": 2.799999952316284,
+      "matched": 43240
+    },
+    {
+      "query": "evidence",
+      "query_ms": 4.299999952316284,
+      "matched": 146651
+    },
+    {
+      "query": "",
+      "query_ms": 7.200000047683716,
+      "matched": 1000000
+    },
+    {
+      "query": "timeout",
+      "query_ms": 2.399999976158142,
+      "matched": 7327
+    },
+    {
+      "query": "retry",
+      "query_ms": 2.3000000715255737,
+      "matched": 25151
+    },
+    {
+      "query": "gateway",
+      "query_ms": 5.399999976158142,
+      "matched": 232346
+    },
+    {
+      "query": "error",
+      "query_ms": 2.8000000715255737,
+      "matched": 43240
+    },
+    {
+      "query": "evidence",
+      "query_ms": 4.200000047683716,
+      "matched": 146651
+    },
+    {
+      "query": "",
+      "query_ms": 7.300000071525574,
+      "matched": 1000000
+    },
+    {
+      "query": "timeout",
+      "query_ms": 2.299999952316284,
+      "matched": 7327
+    },
+    {
+      "query": "retry",
+      "query_ms": 2.5,
+      "matched": 25151
+    },
+    {
+      "query": "gateway",
+      "query_ms": 5.399999976158142,
+      "matched": 232346
+    },
+    {
+      "query": "error",
+      "query_ms": 3.100000023841858,
+      "matched": 43240
+    },
+    {
+      "query": "evidence",
+      "query_ms": 4.199999928474426,
+      "matched": 146651
+    },
+    {
+      "query": "",
+      "query_ms": 7.299999952316284,
+      "matched": 1000000
+    },
+    {
+      "query": "timeout",
+      "query_ms": 2.5,
+      "matched": 7327
+    },
+    {
+      "query": "retry",
+      "query_ms": 2.5,
+      "matched": 25151
+    },
+    {
+      "query": "gateway",
+      "query_ms": 5.5,
+      "matched": 232346
+    },
+    {
+      "query": "error",
+      "query_ms": 2.700000047683716,
+      "matched": 43240
+    },
+    {
+      "query": "evidence",
+      "query_ms": 4.200000047683716,
+      "matched": 146651
+    }
+  ]
+}

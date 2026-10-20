@@ -1,0 +1,57 @@
+{
+  "url": "https://traceglass.2-38.com/",
+  "stats": {
+    "startTime": "2026-10-20T10:55:08.263Z",
+    "duration": 44161.211,
+    "expected": 4,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "tests": [
+    {
+      "file": "explorer.spec.ts",
+      "title": "real WASM boot, million-event search, filters and row inspection",
+      "ok": true,
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 4057
+        }
+      ]
+    },
+    {
+      "file": "explorer.spec.ts",
+      "title": "local Japanese JSONL import is searchable and invalid import preserves data",
+      "ok": true,
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 1761
+        }
+      ]
+    },
+    {
+      "file": "explorer.spec.ts",
+      "title": "compact viewport keeps accessible search and local controls usable",
+      "ok": true,
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 1827
+        }
+      ]
+    },
+    {
+      "file": "performance.spec.ts",
+      "title": "record actual browser WASM query measurements at one million events",
+      "ok": true,
+      "results": [
+        {
+          "status": "passed",
+          "duration_ms": 2695
+        }
+      ]
+    }
+  ]
+}

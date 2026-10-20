@@ -1,0 +1,20 @@
+{
+  "name": "traceglass",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "bash scripts/build.sh",
+    "dev": "wrangler dev --port 8793",
+    "check": "cargo test -p event-core",
+    "test:e2e": "playwright test",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.56.1",
+    "wrangler": "4.151.2"
+  }
+}

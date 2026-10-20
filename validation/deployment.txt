@@ -1,0 +1,5 @@
+Deployment recorded: 2026-10-20
+Service: Cloudflare Workers Static Assets
+Worker: traceglass
+Custom domain: https://traceglass.2-38.com
+Version: 981243d9-b7c8-40fc-bc10-15249e62f24b

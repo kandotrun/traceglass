@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f4f6fb">
+  <meta name="description" content="Find the moment an agent went wrong. A local event explorer built with Rust, GPUI Kit and WebAssembly.">
+  <title>Traceglass — Event explorer</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%235964d9'/%3E%3Cpath d='M14 42V28m12 14V18m12 24V24m12 18V12' stroke='white' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main id="boot" aria-live="polite">
+    <div class="boot-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+    <h1>Traceglass</h1>
+    <p>Find the moment it went wrong.</p>
+    <div class="boot-status" id="boot-status">Loading the event explorer…</div>
+    <p class="quiet">The demo runs on your device. Imported files stay in this tab.</p>
+    <button id="retry" hidden>Reload</button>
+  </main>
+  <noscript>This application needs JavaScript and WebAssembly enabled.</noscript>
+  <input type="file" id="jsonl-file" accept=".jsonl,.ndjson,application/x-ndjson,application/json" hidden aria-label="Open local JSONL file">
+  <button id="text-toggle" hidden aria-expanded="false" aria-controls="text-view">Text view</button>
+  <div id="toast" role="status" hidden></div>
+  <aside id="text-view" hidden aria-label="Accessible event explorer">
+    <header><div><h1>Traceglass</h1><p>The same data, with standard browser controls.</p></div><button id="close-text" aria-label="Close text view">Close</button></header>
+    <form id="filters">
+      <label>Search messages, services and levels<input id="text-search" type="search" placeholder="Try timeout or retry" autocomplete="off"></label>
+      <div class="field-row">
+        <label>Level<select id="text-level"><option value="all">All levels</option><option value="debug">Debug</option><option value="info">Info</option><option value="warn">Warn</option><option value="error">Error</option></select></label>
+        <label>Duration<select id="text-slow"><option value="off">Any duration</option><option value="on">Slow events</option></select></label>
+        <button id="text-reset" type="button">Reset filters</button>
+      </div>
+    </form>
+    <div class="actions">
+      <button data-demo="100000">100k demo</button>
+      <button data-demo="1000000">1m demo</button>
+      <button id="text-import">Open JSONL</button>
+      <a href="/sample.jsonl" download>Sample file</a>
+    </div>
+    <p id="text-summary" role="status"></p>
+    <p class="quiet">First 20 matching events. Select a row to inspect it. Use the canvas view to explore the timeline and scroll the full result set.</p>
+    <div id="text-rows"></div>
+    <h2>Selected event</h2>
+    <pre id="text-detail">Select an event.</pre>
+    <p class="quiet">JSONL accepts timestamp (epoch milliseconds or RFC3339), message, level, service, duration_ms and trace_id. Maximum 32 MiB. <a href="/font-license.txt">Font license</a>.</p>
+  </aside>
+  <p id="live-summary" class="sr-only" aria-live="polite"></p>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>

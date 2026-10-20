@@ -1,0 +1,13 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "traceglass",
+  "compatibility_date": "2026-10-20",
+  "workers_dev": true,
+  "routes": [
+    { "pattern": "traceglass.2-38.com", "custom_domain": true }
+  ],
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "404-page"
+  }
+}
